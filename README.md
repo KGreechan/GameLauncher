@@ -8,6 +8,7 @@ A randomiser for choosing runs in touhou games for when i get indecisive.
   - Touhou 6
   - Touhou 7
   - Touhou 16
+  - More to be added soon ... (according to my wallet)
   
 - Generates a random game, character to use and a shot type to use
 
