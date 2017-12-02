@@ -28,3 +28,13 @@ E:\Storage\programmingProjects\git\GameLauncher-master\GameLauncher-master\obj\D
 E:\Storage\programmingProjects\git\GameLauncher-master\GameLauncher-master\obj\Debug\GameLauncher.csproj.CoreCompileInputs.cache
 E:\Storage\programmingProjects\git\GameLauncher-master\GameLauncher-master\obj\Debug\GameLauncher.exe
 E:\Storage\programmingProjects\git\GameLauncher-master\GameLauncher-master\obj\Debug\GameLauncher.pdb
+E:\Storage\Projects\GameLauncher\bin\Debug\GameLauncher.exe.config
+E:\Storage\Projects\GameLauncher\bin\Debug\GameLauncher.exe
+E:\Storage\Projects\GameLauncher\bin\Debug\GameLauncher.pdb
+E:\Storage\Projects\GameLauncher\obj\Debug\GameLauncher.csprojResolveAssemblyReference.cache
+E:\Storage\Projects\GameLauncher\obj\Debug\GameLauncher.Launcher.resources
+E:\Storage\Projects\GameLauncher\obj\Debug\GameLauncher.Properties.Resources.resources
+E:\Storage\Projects\GameLauncher\obj\Debug\GameLauncher.csproj.GenerateResource.Cache
+E:\Storage\Projects\GameLauncher\obj\Debug\GameLauncher.csproj.CoreCompileInputs.cache
+E:\Storage\Projects\GameLauncher\obj\Debug\GameLauncher.exe
+E:\Storage\Projects\GameLauncher\obj\Debug\GameLauncher.pdb

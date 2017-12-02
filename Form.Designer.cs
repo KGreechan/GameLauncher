@@ -28,8 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Launcher));
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabRandomizer = new System.Windows.Forms.TabPage();
+            this.lblError = new System.Windows.Forms.Label();
+            this.check16 = new System.Windows.Forms.CheckBox();
+            this.check7 = new System.Windows.Forms.CheckBox();
+            this.check6 = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lblShotType = new System.Windows.Forms.Label();
             this.lblCharacter = new System.Windows.Forms.Label();
@@ -43,10 +48,6 @@
             this.systemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.check6 = new System.Windows.Forms.CheckBox();
-            this.check7 = new System.Windows.Forms.CheckBox();
-            this.check16 = new System.Windows.Forms.CheckBox();
-            this.lblError = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabRandomizer.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -83,6 +84,48 @@
             this.tabRandomizer.TabIndex = 1;
             this.tabRandomizer.Text = "Randomizer";
             this.tabRandomizer.UseVisualStyleBackColor = true;
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.ForeColor = System.Drawing.Color.Crimson;
+            this.lblError.Location = new System.Drawing.Point(10, 196);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(0, 16);
+            this.lblError.TabIndex = 12;
+            // 
+            // check16
+            // 
+            this.check16.AutoSize = true;
+            this.check16.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check16.Location = new System.Drawing.Point(319, 340);
+            this.check16.Name = "check16";
+            this.check16.Size = new System.Drawing.Size(101, 26);
+            this.check16.TabIndex = 11;
+            this.check16.Text = "Touhou 16";
+            this.check16.UseVisualStyleBackColor = true;
+            // 
+            // check7
+            // 
+            this.check7.AutoSize = true;
+            this.check7.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check7.Location = new System.Drawing.Point(319, 313);
+            this.check7.Name = "check7";
+            this.check7.Size = new System.Drawing.Size(93, 26);
+            this.check7.TabIndex = 10;
+            this.check7.Text = "Touhou 7";
+            this.check7.UseVisualStyleBackColor = true;
+            // 
+            // check6
+            // 
+            this.check6.AutoSize = true;
+            this.check6.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check6.Location = new System.Drawing.Point(319, 286);
+            this.check6.Name = "check6";
+            this.check6.Size = new System.Drawing.Size(93, 26);
+            this.check6.TabIndex = 9;
+            this.check6.Text = "Touhou 6";
+            this.check6.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -203,48 +246,6 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
-            // check6
-            // 
-            this.check6.AutoSize = true;
-            this.check6.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check6.Location = new System.Drawing.Point(319, 286);
-            this.check6.Name = "check6";
-            this.check6.Size = new System.Drawing.Size(93, 26);
-            this.check6.TabIndex = 9;
-            this.check6.Text = "Touhou 6";
-            this.check6.UseVisualStyleBackColor = true;
-            // 
-            // check7
-            // 
-            this.check7.AutoSize = true;
-            this.check7.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check7.Location = new System.Drawing.Point(319, 313);
-            this.check7.Name = "check7";
-            this.check7.Size = new System.Drawing.Size(93, 26);
-            this.check7.TabIndex = 10;
-            this.check7.Text = "Touhou 7";
-            this.check7.UseVisualStyleBackColor = true;
-            // 
-            // check16
-            // 
-            this.check16.AutoSize = true;
-            this.check16.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check16.Location = new System.Drawing.Point(319, 340);
-            this.check16.Name = "check16";
-            this.check16.Size = new System.Drawing.Size(101, 26);
-            this.check16.TabIndex = 11;
-            this.check16.Text = "Touhou 16";
-            this.check16.UseVisualStyleBackColor = true;
-            // 
-            // lblError
-            // 
-            this.lblError.AutoSize = true;
-            this.lblError.ForeColor = System.Drawing.Color.Crimson;
-            this.lblError.Location = new System.Drawing.Point(10, 196);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(0, 16);
-            this.lblError.TabIndex = 12;
-            // 
             // Launcher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -254,6 +255,7 @@
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
@@ -261,7 +263,7 @@
             this.MinimumSize = new System.Drawing.Size(697, 483);
             this.Name = "Launcher";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Game Launcher";
+            this.Text = "Launcher and Touhou Randomiser";
             this.Load += new System.EventHandler(this.Launcher_Load);
             this.tabControl.ResumeLayout(false);
             this.tabRandomizer.ResumeLayout(false);
