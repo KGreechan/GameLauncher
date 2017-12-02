@@ -94,6 +94,27 @@ namespace GameLauncher
         {
             int randomShot = r.Next(chosen.getShotTypes().Length);
             string chosenShot = chosen.getShotTypes()[randomShot];
+            
+            if(chosen.getName() == "Touhou 16: Hidden Star in Four Seasons")
+            {
+                switch (chosenShot) 
+                {
+                    case "A":
+                        chosenShot = "Spring";
+                        break;
+                    case "B":
+                        chosenShot = "Summer";
+                        break;
+                    case "C":
+                        chosenShot = "Autumn";
+                        break;
+                    case "D":
+                        chosenShot = "Winter";
+                        break;
+                    default:
+                        break;
+                }
+            }
 
             return chosenShot;
         }
