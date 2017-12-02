@@ -10,12 +10,12 @@ namespace GameLauncher.Classes
     {
         private int num;
         private string name;
-        private string[] characters;
-        private string[] possibleCharacters;
+        private List<string> characters;
+        private List<string> possibleCharacters;
 
         private int numOfShotTypes;
-        private string[] shotTypes;
-        string[] possibleShotTypes = new string[4];
+        private List<string> shotTypes;
+        private List<string> possibleShotTypes;
 
         public Game()
         {
@@ -27,35 +27,31 @@ namespace GameLauncher.Classes
             this.num = num;
             this.name = name;
             this.numOfShotTypes = numOfShotTypes;
-            this.shotTypes = new string[numOfShotTypes];
-            this.possibleCharacters = new string[5];
+            this.characters = new List<string>();
+            this.possibleCharacters = new List<string>();
+            this.shotTypes = new List<string>();
+            this.possibleShotTypes = new List<string>();
             this.setPossibleCharacters();
             this.setPossibleShotTypes();
 
             switch (this.num)
             {
                 case 6:
-                    this.characters = new string[2];
-                    for (int i = 0; i < characters.Length; i++)
-                    {
-                        characters[i] = possibleCharacters[i];
-                    }
+                    characters.Add(possibleCharacters[0]);
+                    characters.Add(possibleCharacters[1]);
                     this.setShotTypes(2);
                     break;
                 case 7:
-                    this.characters = new string[3];
-                    for (int i = 0; i < characters.Length; i++)
-                    {
-                        characters[i] = possibleCharacters[i];
-                    }
+                    characters.Add(possibleCharacters[0]);
+                    characters.Add(possibleCharacters[1]);
+                    characters.Add(possibleCharacters[2]);
                     this.setShotTypes(2);
                     break;
                 case 16:
-                    this.characters = new string[4];
-                    characters[0] = possibleCharacters[0];
-                    characters[1] = possibleCharacters[1];
-                    characters[2] = possibleCharacters[3];
-                    characters[3] = possibleCharacters[4];
+                    characters.Add(possibleCharacters[0]);
+                    characters.Add(possibleCharacters[1]);
+                    characters.Add(possibleCharacters[3]);
+                    characters.Add(possibleCharacters[4]);
                     this.setShotTypes(4);
                     break;
                 default:
@@ -66,30 +62,29 @@ namespace GameLauncher.Classes
         public void setPossibleCharacters()
         {
             // Default
-            possibleCharacters[0] = "Reimu";
-            possibleCharacters[1] = "Marisa";
-
+            possibleCharacters.Add("Reimu");
+            possibleCharacters.Add("Marisa");
             // PCB
-            possibleCharacters[2] = "Sakuya";
+            possibleCharacters.Add("Sayuka");
 
             // HSIFS
-            possibleCharacters[3] = "Aya";
-            possibleCharacters[4] = "Cirno";
+            possibleCharacters.Add("Aya");
+            possibleCharacters.Add("Cirno");
         }
 
         public void setPossibleShotTypes()
         {
-            possibleShotTypes[0] = "A";
-            possibleShotTypes[1] = "B";
-            possibleShotTypes[2] = "C";
-            possibleShotTypes[3] = "D";
+            possibleShotTypes.Add("A");
+            possibleShotTypes.Add("B");
+            possibleShotTypes.Add("C");
+            possibleShotTypes.Add("D");
         }
 
         public void setShotTypes(int numOfShotTypes)
         {
             for (int i = 0; i < numOfShotTypes; i++)
             {
-                shotTypes[i] = possibleShotTypes[i];
+                shotTypes.Add(possibleShotTypes[i]);
             }
         }
 
@@ -103,12 +98,12 @@ namespace GameLauncher.Classes
             return name;
         }
 
-        public string[] getCharacters()
+        public List<string> getCharacters()
         {
             return characters;
         }
 
-        public string[] getShotTypes()
+        public List<string> getShotTypes()
         {
             return shotTypes;
         }
