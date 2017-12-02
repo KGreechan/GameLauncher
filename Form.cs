@@ -50,9 +50,19 @@ namespace GameLauncher
                 lblError.Text = "You must select at least one game!";
             } else
             {
-                Game chosenGame = generateRandomGame(chosenGames);
-                string chosenChar = generateRandomCharacter(chosenGame);
-                string chosenShot = generateRandomShot(chosenGame);
+                Game chosenGame = new Game();
+                string chosenChar = "";
+                string chosenShot = "";
+
+                // Randomize 3 times, to reduce amount of times same results are shown!
+                // TODO : PREVENT THE SAME RESULTS SHOWING UP
+                for (int i = 0; i < 3; i++)
+                {
+                    chosenGame = generateRandomGame(chosenGames);
+                    chosenChar = generateRandomCharacter(chosenGame);
+                    chosenShot = generateRandomShot(chosenGame);
+                }
+                
 
                 lblGame.Text = chosenGame.getName();
                 lblCharacter.Text = chosenChar;
@@ -84,7 +94,7 @@ namespace GameLauncher
 
         private string generateRandomCharacter(Game chosen)
         {
-            int randomChar = r.Next(chosen.getCharacters().Length);
+            int randomChar = r.Next(chosen.getCharacters().Count);
             string chosenCharacter = chosen.getCharacters()[randomChar];
 
             return chosenCharacter;
@@ -92,7 +102,7 @@ namespace GameLauncher
 
         private string generateRandomShot(Game chosen)
         {
-            int randomShot = r.Next(chosen.getShotTypes().Length);
+            int randomShot = r.Next(chosen.getShotTypes().Count);
             string chosenShot = chosen.getShotTypes()[randomShot];
             
             if(chosen.getName() == "Touhou 16: Hidden Star in Four Seasons")
@@ -115,7 +125,6 @@ namespace GameLauncher
                         break;
                 }
             }
-
             return chosenShot;
         }
     }
