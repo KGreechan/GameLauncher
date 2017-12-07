@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Launcher));
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabRandomizer = new System.Windows.Forms.TabPage();
@@ -48,8 +49,31 @@
             this.systemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.btn6 = new System.Windows.Forms.Button();
+            this.btn7 = new System.Windows.Forms.Button();
+            this.btn8 = new System.Windows.Forms.Button();
+            this.btn95 = new System.Windows.Forms.Button();
+            this.btn10 = new System.Windows.Forms.Button();
+            this.btn11 = new System.Windows.Forms.Button();
+            this.btn12 = new System.Windows.Forms.Button();
+            this.btn125 = new System.Windows.Forms.Button();
+            this.btn128 = new System.Windows.Forms.Button();
+            this.btn13 = new System.Windows.Forms.Button();
+            this.btn14 = new System.Windows.Forms.Button();
+            this.btn143 = new System.Windows.Forms.Button();
+            this.btn15 = new System.Windows.Forms.Button();
+            this.btnF2 = new System.Windows.Forms.Button();
+            this.btnF1 = new System.Windows.Forms.Button();
+            this.btn16 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabRandomizer.SuspendLayout();
+            this.tabLauncher.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -207,6 +231,26 @@
             // 
             // tabLauncher
             // 
+            this.tabLauncher.Controls.Add(this.label8);
+            this.tabLauncher.Controls.Add(this.label7);
+            this.tabLauncher.Controls.Add(this.label6);
+            this.tabLauncher.Controls.Add(this.label5);
+            this.tabLauncher.Controls.Add(this.btn16);
+            this.tabLauncher.Controls.Add(this.btnF1);
+            this.tabLauncher.Controls.Add(this.btnF2);
+            this.tabLauncher.Controls.Add(this.btn15);
+            this.tabLauncher.Controls.Add(this.btn143);
+            this.tabLauncher.Controls.Add(this.btn14);
+            this.tabLauncher.Controls.Add(this.btn13);
+            this.tabLauncher.Controls.Add(this.btn128);
+            this.tabLauncher.Controls.Add(this.btn125);
+            this.tabLauncher.Controls.Add(this.btn12);
+            this.tabLauncher.Controls.Add(this.btn11);
+            this.tabLauncher.Controls.Add(this.btn10);
+            this.tabLauncher.Controls.Add(this.btn95);
+            this.tabLauncher.Controls.Add(this.btn8);
+            this.tabLauncher.Controls.Add(this.btn7);
+            this.tabLauncher.Controls.Add(this.btn6);
             this.tabLauncher.Location = new System.Drawing.Point(4, 25);
             this.tabLauncher.Name = "tabLauncher";
             this.tabLauncher.Padding = new System.Windows.Forms.Padding(3);
@@ -246,6 +290,218 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // imageList2
+            // 
+            this.imageList2.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // btn6
+            // 
+            this.btn6.Location = new System.Drawing.Point(9, 70);
+            this.btn6.Name = "btn6";
+            this.btn6.Size = new System.Drawing.Size(138, 42);
+            this.btn6.TabIndex = 0;
+            this.btn6.Text = "Touhou 6";
+            this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
+            // 
+            // btn7
+            // 
+            this.btn7.Location = new System.Drawing.Point(9, 118);
+            this.btn7.Name = "btn7";
+            this.btn7.Size = new System.Drawing.Size(138, 42);
+            this.btn7.TabIndex = 1;
+            this.btn7.Text = "Touhou 7";
+            this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
+            // 
+            // btn8
+            // 
+            this.btn8.Location = new System.Drawing.Point(9, 166);
+            this.btn8.Name = "btn8";
+            this.btn8.Size = new System.Drawing.Size(138, 42);
+            this.btn8.TabIndex = 2;
+            this.btn8.Text = "Touhou 8";
+            this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
+            // 
+            // btn95
+            // 
+            this.btn95.Location = new System.Drawing.Point(9, 214);
+            this.btn95.Name = "btn95";
+            this.btn95.Size = new System.Drawing.Size(138, 42);
+            this.btn95.TabIndex = 3;
+            this.btn95.Text = "Touhou 9.5";
+            this.btn95.UseVisualStyleBackColor = true;
+            this.btn95.Click += new System.EventHandler(this.btn95_Click);
+            // 
+            // btn10
+            // 
+            this.btn10.Location = new System.Drawing.Point(153, 70);
+            this.btn10.Name = "btn10";
+            this.btn10.Size = new System.Drawing.Size(138, 42);
+            this.btn10.TabIndex = 4;
+            this.btn10.Text = "Touhou 10";
+            this.btn10.UseVisualStyleBackColor = true;
+            this.btn10.Click += new System.EventHandler(this.btn10_Click);
+            // 
+            // btn11
+            // 
+            this.btn11.Location = new System.Drawing.Point(153, 118);
+            this.btn11.Name = "btn11";
+            this.btn11.Size = new System.Drawing.Size(138, 42);
+            this.btn11.TabIndex = 5;
+            this.btn11.Text = "Touhou 11";
+            this.btn11.UseVisualStyleBackColor = true;
+            this.btn11.Click += new System.EventHandler(this.btn11_Click);
+            // 
+            // btn12
+            // 
+            this.btn12.Location = new System.Drawing.Point(153, 166);
+            this.btn12.Name = "btn12";
+            this.btn12.Size = new System.Drawing.Size(138, 42);
+            this.btn12.TabIndex = 6;
+            this.btn12.Text = "Touhou 12";
+            this.btn12.UseVisualStyleBackColor = true;
+            this.btn12.Click += new System.EventHandler(this.btn12_Click);
+            // 
+            // btn125
+            // 
+            this.btn125.Location = new System.Drawing.Point(153, 214);
+            this.btn125.Name = "btn125";
+            this.btn125.Size = new System.Drawing.Size(138, 42);
+            this.btn125.TabIndex = 7;
+            this.btn125.Text = "Touhou 12.5";
+            this.btn125.UseVisualStyleBackColor = true;
+            this.btn125.Click += new System.EventHandler(this.btn125_Click);
+            // 
+            // btn128
+            // 
+            this.btn128.Location = new System.Drawing.Point(300, 70);
+            this.btn128.Name = "btn128";
+            this.btn128.Size = new System.Drawing.Size(138, 42);
+            this.btn128.TabIndex = 8;
+            this.btn128.Text = "Touhou 12.8";
+            this.btn128.UseVisualStyleBackColor = true;
+            this.btn128.Click += new System.EventHandler(this.btn128_Click);
+            // 
+            // btn13
+            // 
+            this.btn13.Location = new System.Drawing.Point(300, 118);
+            this.btn13.Name = "btn13";
+            this.btn13.Size = new System.Drawing.Size(138, 42);
+            this.btn13.TabIndex = 9;
+            this.btn13.Text = "Touhou 13";
+            this.btn13.UseVisualStyleBackColor = true;
+            this.btn13.Click += new System.EventHandler(this.btn13_Click);
+            // 
+            // btn14
+            // 
+            this.btn14.Location = new System.Drawing.Point(300, 166);
+            this.btn14.Name = "btn14";
+            this.btn14.Size = new System.Drawing.Size(138, 42);
+            this.btn14.TabIndex = 10;
+            this.btn14.Text = "Touhou 14";
+            this.btn14.UseVisualStyleBackColor = true;
+            this.btn14.Click += new System.EventHandler(this.btn14_Click);
+            // 
+            // btn143
+            // 
+            this.btn143.Location = new System.Drawing.Point(300, 214);
+            this.btn143.Name = "btn143";
+            this.btn143.Size = new System.Drawing.Size(138, 42);
+            this.btn143.TabIndex = 11;
+            this.btn143.Text = "Touhou 14.3";
+            this.btn143.UseVisualStyleBackColor = true;
+            this.btn143.Click += new System.EventHandler(this.btn143_Click);
+            // 
+            // btn15
+            // 
+            this.btn15.Location = new System.Drawing.Point(300, 262);
+            this.btn15.Name = "btn15";
+            this.btn15.Size = new System.Drawing.Size(138, 42);
+            this.btn15.TabIndex = 12;
+            this.btn15.Text = "Touhou 15";
+            this.btn15.UseVisualStyleBackColor = true;
+            this.btn15.Click += new System.EventHandler(this.btn15_Click);
+            // 
+            // btnF2
+            // 
+            this.btnF2.Location = new System.Drawing.Point(446, 118);
+            this.btnF2.Name = "btnF2";
+            this.btnF2.Size = new System.Drawing.Size(138, 42);
+            this.btnF2.TabIndex = 13;
+            this.btnF2.Text = "Super Touhou RPG";
+            this.btnF2.UseVisualStyleBackColor = true;
+            this.btnF2.Click += new System.EventHandler(this.btnF2_Click);
+            // 
+            // btnF1
+            // 
+            this.btnF1.Location = new System.Drawing.Point(446, 70);
+            this.btnF1.Name = "btnF1";
+            this.btnF1.Size = new System.Drawing.Size(138, 42);
+            this.btnF1.TabIndex = 14;
+            this.btnF1.Text = "Shining Shooting Star";
+            this.btnF1.UseVisualStyleBackColor = true;
+            this.btnF1.Click += new System.EventHandler(this.btnF1_Click);
+            // 
+            // btn16
+            // 
+            this.btn16.Location = new System.Drawing.Point(300, 310);
+            this.btn16.Name = "btn16";
+            this.btn16.Size = new System.Drawing.Size(138, 42);
+            this.btn16.TabIndex = 15;
+            this.btn16.Text = "Touhou 16";
+            this.btn16.UseVisualStyleBackColor = true;
+            this.btn16.Click += new System.EventHandler(this.btn16_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(25, 32);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(97, 24);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Classic Era";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(166, 32);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(104, 24);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Modern Era";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(305, 32);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(119, 24);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Modern Era 2";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(457, 32);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(96, 24);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Fan Games";
+            // 
             // Launcher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -268,6 +524,8 @@
             this.tabControl.ResumeLayout(false);
             this.tabRandomizer.ResumeLayout(false);
             this.tabRandomizer.PerformLayout();
+            this.tabLauncher.ResumeLayout(false);
+            this.tabLauncher.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -296,6 +554,28 @@
         private System.Windows.Forms.CheckBox check7;
         private System.Windows.Forms.CheckBox check6;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btn16;
+        private System.Windows.Forms.Button btnF1;
+        private System.Windows.Forms.Button btnF2;
+        private System.Windows.Forms.Button btn15;
+        private System.Windows.Forms.Button btn143;
+        private System.Windows.Forms.Button btn14;
+        private System.Windows.Forms.Button btn13;
+        private System.Windows.Forms.Button btn128;
+        private System.Windows.Forms.Button btn125;
+        private System.Windows.Forms.Button btn12;
+        private System.Windows.Forms.Button btn11;
+        private System.Windows.Forms.Button btn10;
+        private System.Windows.Forms.Button btn95;
+        private System.Windows.Forms.Button btn8;
+        private System.Windows.Forms.Button btn7;
+        private System.Windows.Forms.Button btn6;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ImageList imageList2;
     }
 }
 
