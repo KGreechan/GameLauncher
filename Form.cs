@@ -127,5 +127,92 @@ namespace GameLauncher
             }
             return chosenShot;
         }
+
+
+        /*
+         * This next section is for the launcher portion of the program
+         */
+
+        public string startURL = "E:\\Storage\\Games\\Touhou\\Official Games\\";
+        public string startURL2 = "E:\\Storage\\Games\\Touhou\\Fan Games\\";
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(startURL + "Touhou 6 - Embodiment of Scarlet Devil\\th6");
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(startURL + "Touhou 7 - Perfect Cherry Blossom\\th7");
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(startURL + "Touhou 8 - Imperishable Night\\th8");
+        }
+
+        private void btn95_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(startURL + "Touhou 9.5 - Shoot the Bullet\\th095");
+        }
+
+        private void btn10_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(startURL + "Touhou 10 - Mountain of Faith\\th10");
+        }
+
+        private void btn11_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(startURL + "Touhou 11 - Subterranean Animism\\th11");
+        }
+
+        private void btn12_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(startURL + "Touhou 12 - Undefined Fantastic Object\\th12");
+        }
+
+        private void btn125_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(startURL + "Touhou 12.5 - Double Spoiler\\th125");
+        }
+
+        private void btn128_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(startURL + "Touhou 12.8 - Fairy Wars\\th128");
+        }
+
+        private void btn13_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(startURL + "Touhou 13 - Ten Desires\\th13");
+        }
+
+        private void btn14_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(startURL + "Touhou 14 - Double-Dealing Character\\th14");
+        }
+
+        private void btn143_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(startURL + "Touhou 14.3 - Impossible Spell Card\\th143");
+        }
+
+        private void btn15_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(startURL + "Touhou 15 - Legacy of Lunatic Kingdom\\th15");
+        }
+
+        private void btn16_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("E:\\Steam\\steamapps\\common\\th16\\th16");
+        }
+
+        private void btnF1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(startURL2 + "IT0000199161p\\IT0000199161\\rpg");
+        }
+
+        private void btnF2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(startURL2 + "东方夏夜祭\\东方夏夜祭 ～ Shining Shooting Star\\thpss");
+        }
     }
 }
